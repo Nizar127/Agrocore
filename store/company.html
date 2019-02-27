@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Agrocore</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="company.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: #22FD00;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #f4511e;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+	<img width="150px" height="60px" style="margin-bottom: 10px;" src="logo.jpg"></img>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+		<li><a href="#product">PRODUCT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1 style="font-family: 'Arial Black', Gadget, sans-serif"><font color="black">Agrocore</font></h1> 
+  <p><font color="black">We deliver fresh poultry and meat services to your doorstep with a touch of a button. Periodically</font></p> 
+  <form>
+    <div class="input-group">
+      <input type="email" class="form-control" size="30" placeholder="Email Address" required><br/>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Company Page</h2><br>
+      <h4>Delivery, Packaging, Preservation. All about improving quality of human health. Making your food more sustainable</h4><br>
+      <p>We deliver fresh raw food and cooked food for specific groups of people ranging from products and services to food preservation and packaging and city development for sustainability of human lifestyle</p>
+      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong>Providing people with convenience of fresh local product that more sustainable and more flavorful.</h4><br>
+      <p><strong>VISION:</strong> We Want To Build Sustainable Environment For Human Ecosystem</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Container (Services Section) -->
+<div id="product" class="container-fluid text-center">
+  <h2>PRODUCT</h2>
+ <div class="container">
+    <h3 class="h3">Chicken Pieces Product</h3>
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="admin_area/product_images/ayam_potong_20.jpg">
+                        <img class="pic-2" src="admin_area/product_images/ayam_potong_20.jpg
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">20%</span>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star disable"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Ayam Potong 20</a></h3>
+					<h5 class="description">Fully Clean, freshly made, packed and Cash-On-Delivery</h5>
+                    <div class="price">RM 16.00
+                        <span>RM 20.00</span>
+                    </div>
+                    <button class="btn btn-success"><a class="add-to-cart" href="">+ Add To Cart</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="admin_area/product_images/ayam_potong_10.jpg">
+                        <img class="pic-2" src="admin_area/product_images/ayam_potong_10.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">50%</span>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Ayam Potong 10</a></h3>
+                    <div class="price">RM 16.00
+                        <span>RM 22.00</span>
+                    </div>
+                    <button class="btn btn-success"><a class="add-to-cart" href="">+ Add To Cart</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo9/images/img-5.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo9/images/img-6.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">50%</span>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Men's Plain Tshirt</a></h3>
+                    <div class="price">$5.00
+                        <span>$10.00</span>
+                    </div>
+                    <button class="btn btn-success"><a class="add-to-cart" href="">+ Add To Cart</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo9/images/img-7.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo9/images/img-8.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">50%</span>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Men's Plain Tshirt</a></h3>
+                    <div class="price">$5.00
+                        <span>$10.00</span>
+                    </div>
+                    <button class="btn btn-success"><a class="add-to-cart" href="">+ Add To Cart</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+
+<div class="container">
+    <h3 class="h3">shopping Demo-2 </h3>
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid2">
+                <div class="product-image2">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo3/images/img-1.jpeg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo3/images/img-2.jpeg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <a class="add-to-cart" href="">Add to cart</a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                    <span class="price">$599.99</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid2">
+              <div class="product-image2">
+                  <a href="#">
+                      <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo3/images/img-3.jpeg">
+                      <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo3/images/img-4.jpeg">
+                  </a>
+                  <ul class="social">
+                      <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                      <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                      <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                  </ul>
+                  <button class="btn btn-success"><a class="add-to-cart" href="">+ Add To Cart</a></button>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Women's Yellow Top</a></h3>
+                    <span class="price">$699.99</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid2">
+                <div class="product-image2">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo3/images/img-5.jpeg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo3/images/img-6.jpeg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <button class="btn btn-success"><a class="add-to-cart" href="">+ Add To Cart</a></button>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                    <span class="price">$599.99</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid2">
+                <div class="product-image2">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo3/images/img-7.jpeg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo3/images/img-8.jpeg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <button class="btn btn-success"><a class="add-to-cart" href="">+ Add To Cart</a></button>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                    <span class="price">$599.99</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="container">
+    <h3 class="h3">shopping Demo-3 </h3>
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid3">
+                <div class="product-image3">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-1.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-2.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">New</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                    <div class="price">
+                        $63.50
+                        <span>$75.00</span>
+                    </div>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star disable"></li>
+                        <li class="fa fa-star disable"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid3">
+                <div class="product-image3">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-3.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-4.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                    <div class="price">
+                        $43.50
+                    </div>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid3">
+                <div class="product-image3">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-5.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-6.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">New</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                    <div class="price">
+                        $63.50
+                        <span>$75.00</span>
+                    </div>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star disable"></li>
+                        <li class="fa fa-star disable"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid3">
+                <div class="product-image3">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-7.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-8.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-bookmark"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">New</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                    <div class="price">
+                        $63.50
+                        <span>$75.00</span>
+                    </div>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="container">
+    <h3 class="h3">shopping Demo-4 </h3>
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo5/images/img-1.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo5/images/img-2.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Women's Black Top</a></h3>
+                    <div class="price">
+                        $14.40
+                        <span>$16.00</span>
+                    </div>
+                    <a class="add-to-cart" href="">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo5/images/img-3.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo5/images/img-4.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-discount-label">-12%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Men's Blue Shirt</a></h3>
+                    <div class="price">
+                        $17.60
+                        <span>$20.00</span>
+                    </div>
+                    <a class="add-to-cart" href="">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo5/images/img-5.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo5/images/img-6.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Women's Black Top</a></h3>
+                    <div class="price">
+                        $14.40
+                        <span>$16.00</span>
+                    </div>
+                    <a class="add-to-cart" href="">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid4">
+                <div class="product-image4">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo5/images/img-7.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo5/images/img-8.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">New</span>
+                    <span class="product-discount-label">-10%</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Women's Black Top</a></h3>
+                    <div class="price">
+                        $14.40
+                        <span>$16.00</span>
+                    </div>
+                    <a class="add-to-cart" href="">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="container">
+    <h3 class="h3">shopping Demo-5 </h3>
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid5">
+                <div class="product-image5">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo11/images/img-1.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo11/images/img-2.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <a href="#" class="select-options"><i class="fa fa-arrow-right"></i> Select Options</a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Men's Sweat Shirt</a></h3>
+                    <div class="price">$11.00 - $15.00</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid5">
+                <div class="product-image5">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo11/images/img-3.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo11/images/img-4.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <a href="#" class="select-options"><i class="fa fa-arrow-right"></i> Select Options</a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Women's Shirt</a></h3>
+                    <div class="price">$10.00 - $12.00</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid5">
+                <div class="product-image5">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo11/images/img-5.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo11/images/img-6.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <a href="#" class="select-options"><i class="fa fa-arrow-right"></i> Select Options</a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Men's Sweat Shirt</a></h3>
+                    <div class="price">$11.00 - $15.00</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid5">
+                <div class="product-image5">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo11/images/img-7.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo11/images/img-8.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <a href="#" class="select-options"><i class="fa fa-arrow-right"></i> Select Options</a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Men's Sweat Shirt</a></h3>
+                    <div class="price">$11.00 - $15.00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="container">
+    <h3 class="h3">shopping Demo-6 </h3>
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid6">
+                <div class="product-image6">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo10/images/img-1.jpg">
+                    </a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Men's Shirt</a></h3>
+                    <div class="price">$11.00
+                        <span>$14.00</span>
+                    </div>
+                </div>
+                <ul class="social">
+                    <li><a href="" data-tip="Quick View"><h6><strong>Detail</strong><i class="fa fa-search"></h6></i></a></li>
+                    <li><a href="" data-tip="Add to Wishlist"><h6><strong>Wish</strong><i class="fa fa-shopping-bag"></h6></i></a></li>
+                    <li><a href="" data-tip="Add to Cart"><h6><strong>Cart</strong><i class="fa fa-shopping-cart"></h6></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid6">
+                <div class="product-image6">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo10/images/img-2.jpg">
+                    </a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Women's Red Top</a></h3>
+                    <div class="price">$8.00
+                        <span>$12.00</span>
+                    </div>
+                </div>
+                <ul class="social">
+                    <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                    <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                    <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid6">
+                <div class="product-image6">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo10/images/img-3.jpg">
+                    </a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Men's Shirt</a></h3>
+                    <div class="price">$11.00
+                        <span>$14.00</span>
+                    </div>
+                </div>
+                <ul class="social">
+                    <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                    <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                    <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid6">
+                <div class="product-image6">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo10/images/img-4.jpg">
+                    </a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Men's Shirt</a></h3>
+                    <div class="price">$11.00
+                        <span>$14.00</span>
+                    </div>
+                </div>
+                <ul class="social">
+                    <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                    <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                    <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="container">
+    <h3 class="h3">shopping Demo-7 </h3>
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid7">
+                <div class="product-image7">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo8/images/img-1.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo8/images/img-2.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" class="fa fa-search"></a></li>
+                        <li><a href="" class="fa fa-shopping-bag"></a></li>
+                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                    </ul>
+                    <span class="product-new-label">New</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                    </ul>
+                    <div class="price">$15.00
+                        <span>$20.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid7">
+                <div class="product-image7">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo8/images/img-3.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo8/images/img-4.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" class="fa fa-search"></a></li>
+                        <li><a href="" class="fa fa-shopping-bag"></a></li>
+                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                    </ul>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Women's White Shirt</a></h3>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                    </ul>
+                    <div class="price">$15.00</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid7">
+                <div class="product-image7">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo8/images/img-5.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo8/images/img-6.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" class="fa fa-search"></a></li>
+                        <li><a href="" class="fa fa-shopping-bag"></a></li>
+                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                    </ul>
+                    <span class="product-new-label">New</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                    </ul>
+                    <div class="price">$15.00
+                        <span>$20.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid7">
+                <div class="product-image7">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo8/images/img-7.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo8/images/img-8.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" class="fa fa-search"></a></li>
+                        <li><a href="" class="fa fa-shopping-bag"></a></li>
+                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                    </ul>
+                    <span class="product-new-label">New</span>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                    </ul> 
+                    <div class="price">$15.00
+                        <span>$20.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="container">
+    <h3 class="h3">shopping Demo-8 </h3>
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div class="product-grid8">
+                <div class="product-image8">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo7/images/img-1.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo7/images/img-2.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" class="fa fa-search"></a></li>
+                        <li><a href="" class="fa fa-shopping-bag"></a></li>
+                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                    </ul>
+                    <span class="product-discount-label">-20%</span>
+                </div>
+                <div class="product-content">
+                    <div class="price">£ 8.00
+                        <span>£ 10.00</span>
+                    </div>
+                    <span class="product-shipping">Free Shipping</span>
+                    <h3 class="title"><a href="#">Women's Plain Top</a></h3>
+                    <a class="all-deals" href="">See all deals <i class="fa fa-angle-right icon"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="product-grid8">
+                <div class="product-image8">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo7/images/img-3.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo7/images/img-4.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" class="fa fa-search"></a></li>
+                        <li><a href="" class="fa fa-shopping-bag"></a></li>
+                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                    </ul>
+                    <span class="product-discount-label">-30%</span>
+                </div>
+                <div class="product-content">
+                    <div class="price">£ 7.00
+                        <span>£ 10.00</span>
+                    </div>
+                    <span class="product-shipping">Free Shipping</span>
+                    <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                    <a class="all-deals" href="">See all deals <i class="fa fa-angle-right icon"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="product-grid8">
+                <div class="product-image8">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo7/images/img-5.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo7/images/img-6.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" class="fa fa-search"></a></li>
+                        <li><a href="" class="fa fa-shopping-bag"></a></li>
+                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+                    </ul>
+                    <span class="product-discount-label">-20%</span>
+                </div>
+                <div class="product-content">
+                    <div class="price">£ 8.00
+                        <span>£ 10.00</span>
+                    </div>
+                    <span class="product-shipping">Free Shipping</span>
+                    <h3 class="title"><a href="#">Women's Plain Top</a></h3>
+                    <a class="all-deals" href="">See all deals <i class="fa fa-angle-right icon"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="container">
+    <h3 class="h3">shopping Demo-9 </h3>
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid9">
+                <div class="product-image9">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo6/images/img-1.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo6/images/img-2.jpg">
+                    </a>
+                    <a href="#" class="fa fa-search product-full-view"></a>
+                </div>
+                <div class="product-content">
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                    </ul>
+                    <h3 class="title"><a href="#">Women's Top</a></h3>
+                    <div class="price"> $12.60 - $40.53</div>
+                    <a class="add-to-cart" href="">VIEW PRODUCTS</a>
+                </div>
+            </div>
+        </div> 
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid9">
+                <div class="product-image9">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo6/images/img-3.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo6/images/img-4.jpg">
+                    </a>
+                    <a href="#" class="fa fa-search product-full-view"></a>
+                </div>
+                <div class="product-content">
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star disable"></li>
+                        <li class="fa fa-star disable"></li>
+                    </ul>
+                    <h3 class="title"><a href="#">Men's Shirt</a></h3>
+                    <div class="price"> $10.20 </div>
+                    <a class="add-to-cart" href="">READ MORE</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid9">
+                <div class="product-image9">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo6/images/img-5.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo6/images/img-6.jpg">
+                    </a>
+                    <a href="#" class="fa fa-search product-full-view"></a>
+                </div>
+                <div class="product-content">
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                    </ul>
+                    <h3 class="title"><a href="#">Women's Top</a></h3>
+                    <div class="price"> $12.60 - $40.53</div>
+                    <a class="add-to-cart" href="">VIEW PRODUCTS</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid9">
+                <div class="product-image9">
+                    <a href="#">
+                        <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo6/images/img-7.jpg">
+                        <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo6/images/img-8.jpg">
+                    </a>
+                    <a href="#" class="fa fa-search product-full-view"></a>
+                </div>
+                <div class="product-content">
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                    </ul>
+                    <h3 class="title"><a href="#">Women's Top</a></h3>
+                    <div class="price"> $12.60 - $40.53</div>
+                    <a class="add-to-cart" href="">VIEW PRODUCTS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+</div>
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>What we Able To Provide</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>MISSION POWER</h4>
+      <p>Building Sustainable Ecosystem for Human Ecosystem</p><br/>
+	  <button class="btn btn-primary" type="submit" href="#">View For More</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>RECYCLER</h4>
+      <p>We provide garbage disposal services directly from your household and premises based on your subscription</p><br/>
+	  <button class="btn btn-primary" type="submit" href="#">View For More</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>WATER SANITATION SERVICES</h4>
+      <p>We able to create a machine that able to turn seawater into freshly available water for daily amenities services. We provide machines via licensing and contract manufacturing process </p><br/>
+	  <button class="btn btn-primary" type="submit" href="#">View For More</button>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>GREEN</h4>
+      <p>We have create a genetic mutation on grown based plant that can be planted on every single 'impossible area' such as small space which will absorb quadruple times more carbon dioxide than regular tree</p><br/>
+	  <button class="btn btn-primary" type="submit" href="#">View For More</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>OUTDOOR FOOD</h4>
+      <p>We have built a food packaging that people can eat anywhere without need to prep</p><br>
+	  <button class="btn btn-primary" type="submit" href="#">View For More</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 style="color:#303030;">HALAL PRODUCTS</h4>
+      <p>We have build our own sustainable high-tech farm with fresh produce to supply to anyone</p><br/>
+	  <button class="btn btn-primary" type="submit" href="#">View For More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>Portfolio</h2><br>
+  <h4>What we have created</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="paris.jpg" alt="Paris" width="400" height="300">
+        <p><strong>Paris</strong></p>
+        <p>Yes, we built Paris</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="newyork.jpg" alt="New York" width="400" height="300">
+        <p><strong>New York</strong></p>
+        <p>We built New York</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>What our customers say</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+      </div>
+      <div class="item">
+        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Choose a payment plan that works for you</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>3 Days</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>1</strong> Lorem</p>
+          <p><strong>15</strong> Ipsum</p>
+          <p><strong>5</strong> Dolor</p>
+          <p><strong>2</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>RM 35</h3>
+          <h4>per subscription</h4>
+          <button class="btn btn-success btn-lg ">Subscribe</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>7 Days</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50</strong> Lorem</p>
+          <p><strong>25</strong> Ipsum</p>
+          <p><strong>10</strong> Dolor</p>
+          <p><strong>5</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>RM 80</h3>
+          <h4>per subscription</h4>
+          <button class="btn btn-lg btn-success">Subscribe</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>30 Days</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> Lorem</p>
+          <p><strong>50</strong> Ipsum</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>RM 150</h3>
+          <h4>per subscription</h4>
+          <button class="btn btn-lg btn-success">Subscribe</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Terengganu, Malaysia</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +06011 39608174<br/>Fakhrul<br><i class="glyphicon glyphicon-briefcase">&nbsp;<strong>Chief Executive Officer</strong></i><br/><span class="glyphicon glyphicon-envelope"></span> fakhrulnizar.agrocore@gmail.com</p><br>
+	  <p><span class="glyphicon glyphicon-phone"></span>+06011 39608174<br/>Hamizan<br><i class="glyphicon glyphicon-briefcase">&nbsp;<strong>Chief Operation Officer</strong></i><br/><span class="glyphicon glyphicon-envelope"></span> mizanganu.agrocore@gmail.com</p><br>
+	  <p><span class="glyphicon glyphicon-phone"></span>+06011 39608174<br/>Amirul Firhad<br><i class="glyphicon glyphicon-briefcase">&nbsp;<strong>Chief Financial Officer</strong></i><br/><span class="glyphicon glyphicon-envelope"></span> fakhrulnizar.agrocore@gmail.com</p><br>
+      
+	  
+    </div>
+
+	
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-md-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-md-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+	<br/>
+	  <div id="footer"><!-- #footer Begin -->
+    <div class="container"><!-- container Begin -->
+        <div class="row"><!-- row Begin -->
+            
+            <div class="com-sm-6 col-md-3"><!-- col-sm-6 col-md-3 Begin -->
+                
+                <h4>AgroCore Sdn Bhd</h4>
+                
+                <ul><!-- ul Begin -->
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+				  <li><a href="#">Become our Partner</a></li>
+				  <li><a href="#">Makes Money With Us</a></li>
+				  <li><a href="#">Investor Relation</a></li>
+				  <li><a href="#">Community</a></li>
+				  <li><a href="#">Blog</a></li>
+                </ul><!-- ul Finish -->
+                
+                <hr class="hidden-md hidden-lg">
+                
+            </div><!-- col-sm-6 col-md-3 Finish -->
+            
+            <div class="col-sm-6 col-md-3"><!-- col-sm-6 col-md-3 Begin -->
+                
+                <h4>Find Us</h4>
+                
+                <p><!-- p Start -->
+                    
+                    <strong>Agrocore Sdn Bhd</strong>
+                    <br/>Fakhrul
+                    <br/>Hamizan
+					<br/>Firhad
+                    <br/>011-39608174
+                    <br/>fakhrulnizar.agrocore@gmail.com
+                    <br/><strong>Fakhrul Nizar</strong>
+                    
+                </p><!-- p Finish -->
+                
+                <a href="contact.php">Check Our Contact Page</a>
+                
+                <hr class="hidden-md hidden-lg">
+                
+            </div><!-- col-sm-6 col-md-3 Finish -->
+            
+            <div class="col-sm-6 col-md-3">
+                
+                <h4>Get The News</h4>
+                
+                <p class="text-muted">
+                    Dont miss our latest update products.
+                </p>
+                
+                <form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=M-devMedia', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" method="post"><!-- form begin -->
+                    <div class="input-group"><!-- input-group begin -->
+                        
+                        <input type="text" class="form-control" name="email">
+                        
+                        <input type="hidden" value="M-devMedia" name="uri"/><input type="hidden" name="loc" value="en_US"/>
+                        
+                        <span class="input-group-btn"><!-- input-group-btn begin -->
+                            
+                            <input type="submit" value="Get The Updates" class="btn btn-danger">
+                            
+                        </span><!-- input-group-btn Finish -->
+                        
+                    </div><!-- input-group Finish -->
+                </form><!-- form Finish -->
+                
+                <hr>
+                
+                <h4>Keep In Touch</h4>
+                
+                <p class="social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-google-plus"></a>
+                    <a href="#" class="fa fa-envelope"></a>
+                </p>
+                
+            </div>
+        </div><!-- row Finish -->
+    </div><!-- container Finish -->
+</div><!-- #footer Finish -->
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+
+  <p>@Copyright Agrocore 2018</p>
+</footer>
+
+
+
+
+
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
